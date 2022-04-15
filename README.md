@@ -1,7 +1,9 @@
 # Ponto Flutuante - Padrão IEEE754
 ## Calculadora padrão IEEE754 - Precisão simples 32 bits
 Em muitas linguagens de progamação, apesar de rotinas de impressão mostrar a fração 1/10 como 0.10000, se exibirmos o número com maior precisão, veremos que o valor real armazenado é um pouco diferente disso.
+
 Desta forma, ao programar devemos ter cuidado com números de ponto flutuante, em especial com acumuladores e comparações.
+
 O padrão utilizado por nossa calculadora é o simples de 32 bits:
 
 ![iee754.PNG](http://dwebkit.esy.es/repositorio/img/iee754.png)
