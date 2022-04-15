@@ -40,6 +40,3 @@ def converte(num):
   #Imprime o número no formato IEEE 754
   print('\nPadrão IEEE754:')
   print(sinal, expoente, mantissa)
-
-
-#https://carlosrafaelgn.com.br/Aula/Flutuante2.html
