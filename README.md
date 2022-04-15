@@ -1,2 +1,2 @@
 # IEE754
- Calculadora padrão IEEE754 - precisão simples 32 bits
+ Calculadora padrão IEEE754 - Precisão simples 32 bits
