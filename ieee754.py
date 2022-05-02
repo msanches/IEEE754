@@ -22,14 +22,15 @@ def converte(num):
   #Cálculo da mantissa baseado na parte fracionária
   temp = temp - 1
   mantissa= ''
-  while temp != 1:
-    temp = temp * 2
-    if temp > 1: 
-      temp = temp - 1
-      mantissa = mantissa + str(1)
-    elif temp == 1: mantissa = mantissa + str(1)
-    else: mantissa = mantissa + str(0)
-  
+  if temp < 0:
+    while temp != 1:
+      temp = temp * 2
+      if temp > 1: 
+        temp = temp - 1
+        mantissa = mantissa + str(1)
+      elif temp == 1: mantissa = mantissa + str(1)
+      else: mantissa = mantissa + str(0)
+
   #Expoente polarizado x = e + 127
   expoente = '{0:08b}'.format(expoente+127)
   
@@ -38,5 +39,6 @@ def converte(num):
     mantissa = mantissa + str(0)
   
   #Imprime o número no formato IEEE 754
-  print('\nPadrão IEEE754:')
-  print(sinal, expoente, mantissa)
+  iee = str(sinal) + ' ' + str(expoente) + ' ' + str(mantissa)
+  print('\nPadrão IEEE754:', iee)
+  #print(sinal, expoente, mantissa)
