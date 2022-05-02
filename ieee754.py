@@ -22,14 +22,14 @@ def converte(num):
   #Cálculo da mantissa baseado na parte fracionária
   temp = temp - 1
   mantissa= ''
-  if temp < 0:
-    while temp != 1:
-      temp = temp * 2
-      if temp > 1: 
-        temp = temp - 1
-        mantissa = mantissa + str(1)
-      elif temp == 1: mantissa = mantissa + str(1)
-      else: mantissa = mantissa + str(0)
+  while temp != 1:
+    temp = temp * 2
+    if temp > 1: 
+      temp = temp - 1
+      mantissa = mantissa + str(1)
+    elif temp == 1: mantissa = mantissa + str(1)
+    else: mantissa = mantissa + str(0)
+
 
   #Expoente polarizado x = e + 127
   expoente = '{0:08b}'.format(expoente+127)
